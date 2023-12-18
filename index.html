@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet"> <!-- links style.css to index.html and applies styling to the content in index.html -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 text-center" id="weatherIcon">
+                    ☁️
+                </div> <!-- end of icon column -->
+                <div class="col-2">
+                    <div id="currentTemp">48</div>
+                    <div>℉ | ℃</div> <!--could use <p> tag here as well -->
+                </div> <!-- end of temp column -->
+                <div class="col-4" id="details">
+                    Precipitation: 55%<br/>
+                    Humidity: 40%<br/>
+                    Wind: 10mph
+                </div> <!-- end of details column -->
+                <div class="col-4 text-end">
+                    Syracuse, NY 13205<br/>
+                    Thursday 6:18 PM<br/>
+                    Cloudy
+                </div> <!-- end of location column -->
+            </div> <!--end of first row, (current weather)-->
+            <hr>
+            <div class="row" id="forecastRow">
+                <div class="col text-center">
+                    <p>Fri</p>
+                    <p class="forecastIcon">❄️</p>
+                    <p>50°</p>
+                </div> <!-- end of first day -->
+                <div class="col text-center">
+                    <p>Sat</p>
+                    <p class="forecastIcon">🌈</p>
+                    <p>48°</p>
+                </div> <!-- end of second day -->
+                <div class="col text-center">
+                    <p>Sun</p>
+                    <p class="forecastIcon">🦄</p>
+                    <p>72°</p>
+                </div> <!-- end of third day -->
+                <div class="col text-center">
+                    <p>Mon</p>
+                    <p class="forecastIcon">🌧️</p>
+                    <p>98°</p>
+                </div> <!-- end of fourth day -->
+                <div class="col text-center">
+                    <p>Tue</p>
+                    <p class="forecastIcon">🌩️</p>
+                    <p>50°</p>
+                </div> <!-- end of fifth day-->
+            </div> <!-- end of second row (forecast)-->
+        </div> <!-- end of container-->
+    </body>
+</html>
